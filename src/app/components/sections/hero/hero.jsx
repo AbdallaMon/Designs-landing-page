@@ -4,6 +4,7 @@ import { HeroButton, HeroData, HeroVideo } from "./content";
 export default function Hero() {
   return (
     <Box
+      id="hero"
       sx={{
         pt: 14,
         pb: 16,

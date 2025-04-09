@@ -1,4 +1,4 @@
-import { consultData } from "./data";
+import { faqData } from "./data";
 
 import { Box } from "@mui/material";
 import CollapsibleComponent from "@/app/components/ui/QuestionAnswerCollapse";
@@ -6,24 +6,20 @@ import { TitleWithSubTitle } from "../../ui/TitleWithSubTitle";
 import colors from "@/app/helpers/colors";
 import { ActionButton } from "../../ui/ActionButton";
 
-export function ConsultContent() {
+export function FaqContent() {
   return (
     <Box
-      sx={{ p: 2, pt: 4, pb: 8, backgroundColor: "secondary.main" }}
-      id="consult-questions"
+      id="faq"
+      sx={{ p: 2, pt: 8, pb: 8, backgroundColor: "secondary.main" }}
     >
-      <TitleWithSubTitle
-        title={consultData.title}
-        subTitle={consultData.subTitle}
-        titleColor={colors.textColor}
-      />
+      <TitleWithSubTitle title={faqData.title} titleColor={colors.textColor} />
 
-      {consultData.questions.map((item) => (
-        <ConsultItem key={item.id} item={item} />
+      {faqData.questions.map((item) => (
+        <FaqItem key={item.id} item={item} />
       ))}
       <Box sx={{ my: 3 }}>
         <ActionButton
-          action={consultData.action}
+          action={faqData.action}
           actionBg={colors.actionAlt}
           actionText={colors.secondary}
         />
@@ -31,7 +27,7 @@ export function ConsultContent() {
     </Box>
   );
 }
-function ConsultItem({ item }) {
+function FaqItem({ item }) {
   return (
     <Box>
       <CollapsibleComponent title={item.question} index={item.id}>

@@ -1,4 +1,4 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { heroData } from "./data";
 import { TitleWithSubTitle } from "../../ui/TitleWithSubTitle";
 import { ActionButton } from "../../ui/ActionButton";

@@ -2,7 +2,7 @@ const colors = {
   primary: "#d3ac71", // Rich caramel (slightly warmer than original)
   primaryDark: "#b8935a", // Darker caramel
   primaryAlt: "#f7eedd", // Light caramel bg
-  primaryGradient: "linear-gradient(135deg, #be975c 0%, #d3ac71 100%)",
+  primaryGradient: "linear-gradient(180deg, #d3ac71, #be975c 46%, #785644)",
   primaryLight: "#e1c498",
   primaryMatched: "#e8e8e8",
 

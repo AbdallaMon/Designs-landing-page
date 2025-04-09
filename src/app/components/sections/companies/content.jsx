@@ -4,7 +4,10 @@ import { compainiesData } from "./data";
 
 export function CompaniesContent() {
   return (
-    <Box sx={{ backgroundColor: "secondary.main", padding: 2, pt: 0 }}>
+    <Box
+      sx={{ backgroundColor: "secondary.main", padding: 2, pt: 0 }}
+      id="companies"
+    >
       <Box
         sx={{
           display: "flex",
@@ -50,7 +53,12 @@ export function CompanyCard({ logo, text, action }) {
         px: 3,
       }}
     >
-      <img src={logo.src} alt={logo.alt} width={200} height={120} />
+      <img
+        src={logo.src}
+        alt={logo.alt}
+        width={200}
+        style={{ height: "auto" }}
+      />
       <Typography
         variant="body1"
         color="secondary.main"
