@@ -26,11 +26,14 @@ const sampleNavItems = [
 
   { label: "مراحل البرنامج التعليمي المكثف", sectionId: "consult-level" },
   { label: "ما هي النتائج المتوقعه", sectionId: "results" },
+  { label: "اراء بعض المشاركين", sectionId: "testmonilas" },
+
   { label: "الأسئلة الشائعة", sectionId: "faq" },
+  { label: "عن م.محمد الدروبي", sectionId: "about" },
 ];
 
 const Navbar = ({
-  designerName = "Sarah Anderson",
+  designerName = "محمد الدروبي",
   navItems = sampleNavItems,
 }) => {
   const [drawerOpen, setDrawerOpen] = useState(false);

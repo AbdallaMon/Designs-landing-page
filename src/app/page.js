@@ -6,6 +6,7 @@ import { ExtraSection } from "./components/sections/extra-section/extraSection";
 import { Faq } from "./components/sections/faq/FAQ";
 import Hero from "./components/sections/hero/hero";
 import { Results } from "./components/sections/result/result";
+import { TestimonialSwiper } from "./components/sections/testmonials/testmonials";
 import { Footer } from "./components/ui/Footer";
 import Navbar from "./components/ui/Navbar";
 
@@ -19,6 +20,7 @@ export default function Home() {
       <Consult />
       <ConsultLevel />
       <Results />
+      <TestimonialSwiper />
       <Faq />
       <ExtraSection />
       <Footer />
