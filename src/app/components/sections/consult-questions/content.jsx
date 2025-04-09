@@ -18,8 +18,12 @@ export function ConsultContent() {
       {consultData.questions.map((item) => (
         <ConsultItem key={item.id} item={item} />
       ))}
-      <Box sx={{ my: 4 }}>
-        <ActionButton action={consultData.action} />
+      <Box sx={{ my: 3 }}>
+        <ActionButton
+          action={consultData.action}
+          actionBg={colors.actionAlt}
+          actionText={colors.secondary}
+        />
       </Box>
     </Box>
   );

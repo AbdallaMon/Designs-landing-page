@@ -1,19 +1,23 @@
+import colors from "@/app/helpers/colors";
 import { Box, Button } from "@mui/material";
 
-export function ActionButton({ action }) {
+export function ActionButton({
+  action,
+  actionBg = colors.actionBg,
+  actionText = colors.actionText,
+}) {
   return (
     <Box sx={{ marginTop: 8, display: "flex", justifyContent: "center" }}>
       <Button
         variant="contained"
-        color="primary"
         size="large"
         href={action.url}
         target="_blank"
         rel="noopener noreferrer"
         component="a"
         sx={{
-          backgroundColor: "primary.main",
-          color: "white",
+          backgroundColor: actionBg,
+          color: actionText,
           "&:hover": {
             backgroundColor: "primary.dark",
           },

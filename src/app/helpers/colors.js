@@ -25,6 +25,11 @@ const colors = {
   warning: "#d3ac71", // Caramel tone
   error: "#bf776e", // Muted coral
   info: "#768fa1", // Muted blue-gray
+
+  // Action colors
+  actionBg: "#f8edd6",
+  actionText: "#b8935a",
+  actionAlt: "#d8b096",
 };
 
 export default colors;
