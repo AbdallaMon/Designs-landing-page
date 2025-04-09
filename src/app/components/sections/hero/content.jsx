@@ -31,7 +31,7 @@ function HeroVideo() {
     </Box>
   );
 }
-export function HeroButton() {
+function HeroButton() {
   return <ActionButton action={heroData.action} />;
 }
 export { HeroData, HeroVideo, HeroButton };
