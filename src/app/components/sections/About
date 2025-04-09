@@ -1,0 +1,70 @@
+rt React from 'react';
+import { 
+  Box, 
+  Typography, 
+  Grid,
+  Avatar,
+  Link,
+  Paper
+} from '@mui/material';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
+function ProfileComponent() {
+  return (
+    <Paper elevation={3} sx={{ borderRadius: 4, overflow: 'hidden', maxWidth: '1000px', mx: 'auto' }}>
+      <Box sx={{ p: 0, position: 'relative' }}>
+        {/* Purple background shape */}
+        <Box 
+          sx={{ 
+            position: 'absolute',
+            width: '50%', 
+            height: '100%', 
+            right: 0, 
+            bgcolor: '#5E2A8E', // Deep purple similar to the image
+            borderTopLeftRadius: '40%',
+            borderBottomLeftRadius: '40%',
+            zIndex: 0
+          }} 
+        />
+        
+        <Grid container spacing={2} sx={{ position: 'relative', zIndex: 1, p: 4 }}>
+          {/* Left side - Profile image */}
+          <Grid item xs={12} md={5} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <Avatar 
+              src="/api/placeholder/400/400" 
+              alt="Profile" 
+              sx={{ 
+                width: 280, 
+                height: 280, 
+                border: '4px solid white',
+                boxShadow: 3
+              }} 
+            />
+          </Grid>
+          
+          {/* Right side - Text information */}
+          <Grid item xs={12} md={7}>
+            <Box sx={{ textAlign: 'right', direction: 'rtl' }}>
+              <Typography variant="h4" component="h1" gutterBottom color="#5E2A8E" fontWeight="bold">
+                عن م.محمد الدروبي
+              </Typography>
+              
+              <Box sx={{ display: 'flex', justifyContent: 'flex-end', mb: 2 }}>
+                <Link href="#" color="#5E2A8E" sx={{ ml: 1, display: 'flex', alignItems: 'center' }}>
+                  <LinkedInIcon sx={{ mr: 1 }} /> Mohammad-al-droubi
+                </Link>
+              </Box>
+              
+              <Typography variant="body1" paragraph align="right">
+                محمد الدروبي مهندس خوارزميات ومهندس اتصالات، حاصل على التأشيرة الذهبية لرواد الأعمال وأصحاب المواهب في دبي. مؤسس شركة Appers لخدمات الحوسبة السحابية، مؤسس لتطبيق لايفي، ومؤسس شركة شرارة ميديا للتسويق الرقمي الفايرال.
+              </Typography>
+              
+              <Typography variant="body1" paragraph align="right">
+                عمل محمد الدروبي أيضا في كبرى الشركات التكنولوجية العالمية مثل نوكيا و إريكسون. لدى محمد خبرة واسعة بإطلاق وتأسيس المشاريع الStartups وقام بتأسيس أكثر من ١٣ مشروع، بعضها مثل، وبعضها تم بيعه، والبعض الآخر نجح نجاحا باهرا.
+              </Typography>
+            </Box>
+          </Grid>
+        </Grid>
+      </Box>
+    </Paper>
+  );
