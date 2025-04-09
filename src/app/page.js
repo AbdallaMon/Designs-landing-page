@@ -1,3 +1,4 @@
+import { About } from "./components/sections/about/about";
 import { Companies } from "./components/sections/companies/compaines";
 import { ConsultQuestions } from "./components/sections/consult-questions/consultQuestions";
 import { Consult } from "./components/sections/consult/consult";
@@ -22,6 +23,7 @@ export default function Home() {
       <Results />
       <TestimonialSwiper />
       <Faq />
+      <About />
       <ExtraSection />
       <Footer />
     </div>

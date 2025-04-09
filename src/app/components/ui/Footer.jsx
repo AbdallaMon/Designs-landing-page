@@ -73,7 +73,7 @@ export function SocialMediaIconsLinks() {
     </Box>
   );
 }
-function SocialMedia({ link, icon, size = 26 }) {
+export function SocialMedia({ link, icon, size = 26 }) {
   const Icon = icon;
   return (
     <Box
@@ -85,8 +85,8 @@ function SocialMedia({ link, icon, size = 26 }) {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        width: size === 20 ? 40 : 48,
-        height: size === 20 ? 40 : 48,
+        width: size <= 20 ? 40 : 48,
+        height: size <= 20 ? 40 : 48,
         borderRadius: "50%",
 
         backgroundColor: lighten(colors.primary, 0.4),
