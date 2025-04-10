@@ -1,6 +1,7 @@
 import colors from "@/app/helpers/colors";
 import { Box, Button, Grid, Typography } from "@mui/material";
 import { compainiesData } from "./data";
+import { TitleWithSubTitle } from "../../ui/TitleWithSubTitle";
 
 export function CompaniesContent() {
   return (
@@ -17,14 +18,13 @@ export function CompaniesContent() {
           textAlign: "center",
         }}
       >
-        <Typography
-          variant="h3"
-          color={colors.secondaryText}
-          fontSize={40}
-          fontWeight={700}
-        >
-          المواقع الالكترونيه لشركاتي
-        </Typography>
+        <TitleWithSubTitle
+          title={{
+            firstLine: "المواقع الالكترونيه",
+          }}
+          subTitle="لشركاتي"
+          titleColor={colors.textColor}
+        />
       </Box>
       <Grid container spacing={2} sx={{ marginTop: 4 }}>
         {compainiesData.map((company) => (
@@ -85,6 +85,11 @@ export function CompanyCard({ logo, text, action }) {
           fontSize: 20,
           fontWeight: 700,
           px: 5,
+          boxShadow: "0 0 0 !important",
+          "&:hover": {
+            backgroundColor: "transparent",
+            boxShadow: "0 0 0 !important",
+          },
         }}
       >
         <Box
