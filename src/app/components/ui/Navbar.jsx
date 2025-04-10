@@ -17,19 +17,22 @@ import { BiMenuAltRight as Menu } from "react-icons/bi";
 
 import colors from "@/app/helpers/colors";
 import { SocialMediaIconsLinks } from "./Footer";
+import { name } from "@/app/main-data";
 
-// Sample data for demonstration
 const sampleNavItems = [
   { label: "الرئيسية", sectionId: "hero" },
-  { label: "اسئلة حول البرنامج التعليمي", sectionId: "consult-questions" },
+  {
+    label: "اسئلة حول استشارات التصميم الداخلي ",
+    sectionId: "consult-questions",
+  },
   { label: "ما الذي سوف اتعلمه", sectionId: "consult" },
 
-  { label: "مراحل البرنامج التعليمي المكثف", sectionId: "consult-level" },
+  { label: "مراحل استشارات المشاريع والفنادق", sectionId: "consult-level" },
   { label: "ما هي النتائج المتوقعه", sectionId: "results" },
   { label: "اراء بعض المشاركين", sectionId: "testmonilas" },
 
   { label: "الأسئلة الشائعة", sectionId: "faq" },
-  { label: "عن م.محمد الدروبي", sectionId: "about" },
+  { label: `عن ${name}`, sectionId: "about" },
 ];
 
 const Navbar = ({

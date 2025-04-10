@@ -1,6 +1,7 @@
 import colors from "@/app/helpers/colors";
+import { name } from "@/app/main-data";
 import { Box, lighten, Typography } from "@mui/material";
-import { FaFacebookF, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
+import { FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
 import { IoLocation } from "react-icons/io5";
 
 export function Footer() {
@@ -21,10 +22,14 @@ export function Footer() {
         }}
       >
         <Typography variant="h6" color="text.secondary" align="center">
-          م.محمد الدروبي
+          {name}{" "}
         </Typography>
         <SocialMediaIconsLinks />
         <Box
+          component="a"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://maps.app.goo.gl/SRyUWLH7F5nNAycg8?g_st=com.google.maps.preview.copy"
           sx={{
             display: "flex",
             gap: 2,
@@ -38,13 +43,13 @@ export function Footer() {
             width: "100%",
           }}
         >
-          <SocialMedia icon={IoLocation} size={20} />
-          العنوان: دبي, مكاتب بوابة ابن بطوطة 802
+          <SocialMedia icon={IoLocation} size={20} type="div" />
+          Dubai / Donna Towers 2308{" "}
         </Box>
       </Box>
       <Box sx={{ mt: 3, py: 2, borderTop: 1, borderColor: "divider" }}>
         <Typography variant="body2" color="text.secondary" align="center">
-          جميع الحقوق محفوظة © 2024 م.محمد الدروبي
+          جميع الحقوق محفوظة © 2025 {name}
         </Typography>
       </Box>
     </Box>
@@ -54,33 +59,31 @@ export function SocialMediaIconsLinks() {
   return (
     <Box sx={{ display: "flex", gap: 2, mt: 3, justifyContent: "center" }}>
       <SocialMedia
-        link="https://www.facebook.com/mohammad.droubi"
-        icon={FaFacebookF}
-      />
-      <SocialMedia
-        link="https://www.linkedin.com/in/mohammad-droubi"
-        icon={FaLinkedin}
+        link="https://www.instagram.com/eng.ahmad_almobayed/?hl=ar"
+        icon={FaInstagram}
       />
 
       <SocialMedia
-        link="https://www.linkedin.com/in/mohammad-droubi"
+        link="https://www.tiktok.com/@ahmadmobayed"
         icon={FaTiktok}
       />
       <SocialMedia
-        link="https://www.instagram.com/mohammad.droubi"
-        icon={FaInstagram}
+        link="https://www.youtube.com/@ahmadalmobayed"
+        icon={FaYoutube}
       />
     </Box>
   );
 }
-export function SocialMedia({ link, icon, size = 26 }) {
+export function SocialMedia({ link, icon, size = 26, type = "a" }) {
   const Icon = icon;
   return (
     <Box
-      component="a"
-      target="_blank"
-      rel="noopener noreferrer"
-      href={link}
+      component={type}
+      {...(type === "a" && {
+        target: "_blank",
+        rel: "noopener noreferrer",
+        href: link,
+      })}
       sx={{
         display: "flex",
         justifyContent: "center",

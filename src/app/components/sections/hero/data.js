@@ -1,9 +1,11 @@
+import { consultLink, name } from "@/app/main-data";
+
 export const heroData = {
   title: {
     firstLine: "الموقع الرسمي",
-    secondLine: "لرائد الاعمال",
+    secondLine: "للمهندس",
   },
-  subTitle: "م.محمد الدروبي",
+  subTitle: name,
   description:
     "موقع رائد الاعمال هو موقع يهدف الى تقديم المعلومات والموارد اللازمة لدعم رواد الاعمال في مسيرتهم نحو النجاح.",
   video: {
@@ -11,10 +13,10 @@ export const heroData = {
   },
   action: {
     text: "سجل لاستشاره معي",
-    url: "https://calendly.com/mohammad-droubi/30min",
+    url: consultLink,
   },
   background: {
     src: "/hero/background.svg",
-    alt: ` الموقع الرسمي لرائد الاعمال م.محمد الدروبي`,
+    alt: ` الموقع الرسمي لرائد الاعمال ${name}`,
   },
 };

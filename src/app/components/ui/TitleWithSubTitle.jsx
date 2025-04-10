@@ -23,7 +23,7 @@ export function TitleWithSubTitle({
         fontWeight={700}
       >
         {title.firstLine}
-        {title.firstLine.secondLin && (
+        {title.secondLine && (
           <>
             <br />
             {title.secondLine}

@@ -9,7 +9,7 @@ import { ActionButton } from "../../ui/ActionButton";
 export function ConsultContent() {
   return (
     <Box
-      sx={{ p: 2, pt: 4, pb: 8, backgroundColor: "secondary.main" }}
+      sx={{ p: 2, pt: 8, pb: 8, backgroundColor: "secondary.main" }}
       id="consult-questions"
     >
       <TitleWithSubTitle

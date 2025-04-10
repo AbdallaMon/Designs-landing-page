@@ -56,15 +56,18 @@ export function CompanyCard({ logo, text, action }) {
       <img
         src={logo.src}
         alt={logo.alt}
-        width={200}
-        style={{ height: "auto" }}
+        width={120}
+        style={{
+          height: "auto",
+          backgroundColor: logo.backgroundColor && logo.backgroundColor,
+        }}
       />
       <Typography
         variant="body1"
         color="secondary.main"
         fontSize={20}
         mb={3}
-        mt={5}
+        mt={3}
       >
         {text}
       </Typography>

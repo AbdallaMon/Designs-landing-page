@@ -1,15 +1,7 @@
-import {
-  Box,
-  Typography,
-  Grid,
-  Avatar,
-  Link,
-  Paper,
-  lighten,
-} from "@mui/material";
-import { FaLinkedin } from "react-icons/fa";
-import { SocialMedia, SocialMediaIconsLinks } from "../../ui/Footer";
+import { Box, Typography, Paper, lighten } from "@mui/material";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import colors from "@/app/helpers/colors";
+import { consultLink, name } from "@/app/main-data";
 
 export function About() {
   return (
@@ -36,15 +28,17 @@ export function About() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              mb: 1.5,
             }}
           >
             <img
-              src="https://aldrobi.com/images/aboutme.png"
-              alt="Profile"
+              src="/about/personal.jpeg"
+              alt={`المهندس احمد صاحب موقع دريم استوديو ${consultLink}`}
               style={{
-                width: 280,
-                height: 280,
                 maxWidth: "100%",
+                maxHeight: 400,
+                borderRadius: "12px",
+                boxShadow: `0 4px 8px rgba(0, 0, 0, 0.2)`,
               }}
             />
           </Box>
@@ -66,12 +60,12 @@ export function About() {
                   mb: 2,
                 }}
               >
-                عن م.محمد الدروبي
+                عن {name}
               </Typography>
-
               <Box
                 component="a"
                 target="_blank"
+                href="https://www.instagram.com/eng.ahmad_almobayed/?hl=ar"
                 rel="noopener noreferrer"
                 sx={{
                   display: "flex",
@@ -79,6 +73,7 @@ export function About() {
                   alignItems: "center",
                   mb: 2,
                   gap: 1,
+                  textDecoration: "none",
                 }}
               >
                 <Box
@@ -92,7 +87,7 @@ export function About() {
                     backgroundColor: lighten(colors.primary, 0.4),
                   }}
                 >
-                  <FaLinkedin size={12} color="white" />
+                  <FaInstagram size={12} color="white" />
                 </Box>
                 <Typography
                   variant="body1"
@@ -102,18 +97,20 @@ export function About() {
                   textAlign={"center"}
                   fontSize={18}
                 >
-                  Mohammad-al-droubi
+                  Ahmed Almobayed
                 </Typography>
               </Box>
 
               <Typography variant="body1" textAlign={"left"} fontSize={18}>
-                محمد الدروبي مهندس خوارزميات ومنهدس اتصالات, حاصل على التأشيرة
-                الذهبية لرواد الأعمال وأصحاب المواهب في دبي, مؤسس شركة Appers
-                لخدمات الحوسبة السحابية, مؤسس لتطبيق لايفي, ومؤسس شركة شرارة
-                ميديا للتسويق الرقمي الفايرال, عمل محمد الدروبي أيضا في كبرى
-                الشركات التكنولوجية العالمية مثل نوكيا و إريكسون, لدى محمد خبرة
-                واسعة بإطلاق وتأسيس المشاريع الStartups وقام بتأسيس أكثر من 13
-                مشروع, بعضها فشل, وبعضها تم بيعه, والبعض الاّخر نجح نجاحا باهرا.
+                المهندس أحمد المبيض هو مهندس معماري متخصص في التصميم الداخلي
+                وصانع محتوى بارز، تجاوزت مشاهداته على السوشيال ميديا مليار
+                مشاهدة. يُعرف بتقديمه أفكارًا مبتكرة يوميًا، تجمع بين الإبداع
+                العملي والجمال البصري. يمتلك شركتين رائدتين في المجال: دريم
+                استديو للتصميم والتنفيذ الداخلي، وديكور ستورز المتخصصة في
+                الأثاث، حيث يقدّم حلولًا فريدة ومتكاملة للمشاريع السكنية
+                والتجارية. إلى جانب عمله الميداني، المهندس أحمد معتمد في تدريب
+                المهندسين من عدة جهات، ومؤلف لعدد من الكتب المتخصصة في مجال
+                التصميم الداخلي، مما يجعله من أبرز الأسماء في هذا القطاع.
               </Typography>
             </Box>
           </Box>

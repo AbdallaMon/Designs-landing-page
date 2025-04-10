@@ -124,7 +124,8 @@ export function TestimonialSwiper() {
       id="testmonilas"
       sx={{
         width: "100%",
-        py: 8,
+        pb: 8,
+        pt: 4,
         overflow: "hidden",
         backgroundColor: "background.default",
         "& .swiper-pagination-bullet": {
