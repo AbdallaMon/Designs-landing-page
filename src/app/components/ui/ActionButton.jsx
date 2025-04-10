@@ -23,8 +23,8 @@ export function ActionButton({
           },
           padding: 2,
           borderRadius: "50px",
-          fontSize: 24,
-          px: 6,
+          fontSize: 20,
+          px: 4,
           fontWeight: 700,
         }}
       >

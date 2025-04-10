@@ -19,7 +19,7 @@ export function TitleWithSubTitle({
       <Typography
         variant="h3"
         color={titleColor}
-        fontSize={32}
+        fontSize={30}
         fontWeight={700}
       >
         {title.firstLine}
@@ -33,7 +33,7 @@ export function TitleWithSubTitle({
       <Typography
         variant="h3"
         color={colors.secondaryText}
-        fontSize={32}
+        fontSize={30}
         fontWeight={700}
       >
         {subTitle}
