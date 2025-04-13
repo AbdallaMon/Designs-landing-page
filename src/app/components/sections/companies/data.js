@@ -8,10 +8,10 @@ export const compainiesData = [
       src: "/logo/dream-1.png",
       alt: "دريم استديو",
     },
-    text: "صميم داخلي فاخر، تنفيذ احترافي، لمسات إبداعية، مواد عصرية.",
+    text: "تصميم داخلي فاخر، تنفيذ احترافي، لمسات إبداعية، مواد عصرية.",
     action: {
       text: "دريم استديو",
-      url: "https://dreamstudiio.com/",
+      url: "https://maps.app.goo.gl/SRyUWLH7F5nNAycg8?g_st=com.google.maps.preview.copy",
     },
   },
 

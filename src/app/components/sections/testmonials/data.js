@@ -8,7 +8,7 @@ export const testimonialsData = {
       id: 1,
       name: "سارة القحطاني",
       location: "السعودية",
-      avatar: "/api/placeholder/40/40",
+      avatar: "/avatars/avatar-1.jpg",
       review:
         "ول مرة أحس إن في أحد فهم ذوقي واحتياجاتي من أول جلسة، كل شيء كان مدروس وفعلاً فرق كثير عن التصاميم التقليدية.",
     },
@@ -16,7 +16,7 @@ export const testimonialsData = {
       id: 2,
       name: "محمد بن راشد",
       location: "الإمارات",
-      avatar: "/api/placeholder/40/40",
+      avatar: "/avatars/avatar-2.jpg",
       review:
         "أحمد وفريقه فتحوا عيوني على مشاكل كنت شايفها عادية، لكن فعلاً كانت قاعدة تخليني أضيّع فلوس بدون ما أدري.",
     },
@@ -24,7 +24,7 @@ export const testimonialsData = {
       id: 3,
       name: "نوف آل ثاني",
       location: "قطر",
-      avatar: "/api/placeholder/40/40",
+      avatar: "/avatars/avatar-3.jpg",
       review:
         "أنا طلبت استشارة للفيلا الاستثمارية، واليوم كل اللي يشوفها ينبهر من توزيعها وتصميمها. حتى التأجير صار أسهل وأسرع.",
     },
@@ -32,7 +32,7 @@ export const testimonialsData = {
       id: 4,
       name: "سلمان الدوسري",
       location: "البحرين",
-      avatar: "/api/placeholder/40/40",
+      avatar: "/avatars/avatar-4.jpg",
       review:
         "أنا عندي خبرة سابقة في البناء، لكن الاستشارة كانت مختلفة تمامًا، علموني أشياء ما كنت أتوقعها أبداً.",
     },
@@ -40,7 +40,7 @@ export const testimonialsData = {
       id: 5,
       name: "هند الكعبي",
       location: "الإمارات",
-      avatar: "/api/placeholder/40/40",
+      avatar: "/avatars/avatar-5.jpg",
       review:
         "لتصميم مو بس حلو، حتى توزيع المساحات كان عبقري! البيت صار أوسع وعملي أكثر.",
     },
@@ -48,7 +48,7 @@ export const testimonialsData = {
       id: 6,
       name: "عبدالله الزهراني",
       location: "السعودية",
-      avatar: "/api/placeholder/40/40",
+      avatar: "/avatars/avatar-6.jpg",
       review:
         "كنت متردد أبدأ التصميم لأن الميزانية محدودة، لكن بعد الاستشارة اكتشفت إن الجمال ما له علاقة بالمصاريف الكثيرة.",
     },
@@ -56,7 +56,7 @@ export const testimonialsData = {
       id: 7,
       name: "مشاعل المطيري",
       location: "الكويت",
-      avatar: "/api/placeholder/40/40",
+      avatar: "/avatars/avatar-7.jpg",
       review:
         "كل نقطة ناقشناها في الجلسة الأولى، شفتها تنفذت على أرض الواقع، بكل التفاصيل، ما في شيء عشوائي.",
     },
@@ -64,7 +64,7 @@ export const testimonialsData = {
       id: 8,
       name: "علي البلوشي",
       location: "عمان",
-      avatar: "/api/placeholder/40/40",
+      avatar: "/avatars/avatar-8.jpg",
       review:
         "أنا صاحب فندق صغير، طلبت استشارة والنتيجة كانت تغييرات بسيطة عطت الفندق روح جديدة وجذبت الزبائن.",
     },
@@ -72,7 +72,7 @@ export const testimonialsData = {
       id: 9,
       name: "مها القاسمي",
       location: "الإمارات",
-      avatar: "/api/placeholder/40/40",
+      avatar: "/avatars/avatar-9.jpg",
       review:
         "الشي اللي عجبني إنهم ما قدموا حلول جاهزة، بل صنعوا أفكار خاصة ببيتي، كأنهم عاشوا فيه.",
     },
@@ -80,7 +80,7 @@ export const testimonialsData = {
       id: 10,
       name: "فهد العجمي",
       location: "الكويت",
-      avatar: "/api/placeholder/40/40",
+      avatar: "/avatars/avatar-10.jpg",
       review:
         "أنا اشتغلت مع شركات قبل، بس أول مرة أحس إني شريك في التصميم، مش مجرد عميل. شغل احترافي وتفاصيل تُبهرك.",
     },

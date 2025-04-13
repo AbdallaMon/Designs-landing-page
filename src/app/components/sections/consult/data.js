@@ -4,7 +4,7 @@ export const consultData = {
   title: {
     firstLine: "استشارات التصميم والتنفيذ",
   },
-  subTitle: "وجعل منزلك براند خاص",
+  subTitle: "اجعل منزلك براندك الخاص",
   action: {
     text: "اطلب استشارة لمنزلك",
     link: consultLink,
