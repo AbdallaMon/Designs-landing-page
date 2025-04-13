@@ -1,121 +1,72 @@
-import { Box, Typography, Paper, lighten } from "@mui/material";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
-import colors from "@/app/helpers/colors";
-import { consultLink, name } from "@/app/main-data";
+"use client";
+import { AboutContent } from "./content";
+import { useMultipleScrollAnimations } from "@/app/animations/useMultipleScrollAnimations";
 
 export function About() {
+  const animations = [
+    {
+      target: ".about-image",
+      triggerId: ".about-image",
+      from: {
+        opacity: 0,
+        scale: 0.8,
+        duration: 1.2,
+        ease: "back.out(1.7)",
+      },
+      to: {
+        opacity: 1,
+        scale: 1,
+      },
+    },
+    {
+      target: ".about-title",
+      triggerId: ".about-title-wrapper",
+      from: {
+        opacity: 0,
+        x: 40,
+        duration: 0.8,
+        ease: "power3.out",
+      },
+      to: {
+        opacity: 1,
+        x: 0,
+      },
+    },
+    {
+      target: ".about-link",
+      triggerId: ".about-link",
+      from: {
+        opacity: 0,
+        x: -40,
+        duration: 0.8,
+        ease: "power3.out",
+      },
+      to: {
+        opacity: 1,
+        x: 0,
+      },
+    },
+    {
+      target: ".about-content",
+      triggerId: ".about-content",
+      from: {
+        opacity: 0,
+        y: 40,
+        duration: 1,
+        ease: "circ.out",
+      },
+      to: {
+        opacity: 1,
+        y: 0,
+      },
+    },
+  ];
+
+  const aboutRef = useMultipleScrollAnimations(animations);
+
   return (
-    <Paper
-      id="about"
-      elevation={3}
-      sx={{
-        background: "Background.default",
-      }}
-    >
-      <Box sx={{ p: 0, position: "relative" }}>
-        <Box
-          sx={{
-            p: 2,
-            pt: 8,
-            pb: 8,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              mb: 1.5,
-            }}
-          >
-            <img
-              src="/about/personal.jpeg"
-              alt={`المهندس احمد صاحب موقع دريم استوديو ${consultLink}`}
-              style={{
-                maxWidth: "100%",
-                maxHeight: 400,
-                borderRadius: "12px",
-                boxShadow: `0 4px 8px rgba(0, 0, 0, 0.2)`,
-              }}
-            />
-          </Box>
-
-          <Box>
-            <Box sx={{ textAlign: "right", direction: "rtl" }}>
-              <Typography
-                variant="h5"
-                component="h1"
-                gutterBottom
-                color="#5E2A8E"
-                fontWeight="bold"
-                textAlign={"center"}
-                sx={{
-                  borderRadius: 20,
-                  backgroundColor: lighten(colors.secondary, 0.4),
-                  py: 1,
-                  px: 3,
-                  mb: 2,
-                }}
-              >
-                عن {name}
-              </Typography>
-              <Box
-                component="a"
-                target="_blank"
-                href="https://www.instagram.com/eng.ahmad_almobayed/?hl=ar"
-                rel="noopener noreferrer"
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  mb: 2,
-                  gap: 1,
-                  textDecoration: "none",
-                }}
-              >
-                <Box
-                  sx={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    width: 30,
-                    height: 30,
-                    borderRadius: "50%",
-                    backgroundColor: lighten(colors.primary, 0.4),
-                  }}
-                >
-                  <FaInstagram size={12} color="white" />
-                </Box>
-                <Typography
-                  variant="body1"
-                  component="span"
-                  color="#5E2A8E"
-                  fontWeight="bold"
-                  textAlign={"center"}
-                  fontSize={18}
-                >
-                  Ahmed Almobayed
-                </Typography>
-              </Box>
-
-              <Typography variant="body1" textAlign={"left"} fontSize={18}>
-                المهندس أحمد المبيض هو مهندس معماري متخصص في التصميم الداخلي
-                وصانع محتوى بارز، تجاوزت مشاهداته على السوشيال ميديا مليار
-                مشاهدة. يُعرف بتقديمه أفكارًا مبتكرة يوميًا، تجمع بين الإبداع
-                العملي والجمال البصري. يمتلك شركتين رائدتين في المجال: دريم
-                استديو للتصميم والتنفيذ الداخلي، وديكور ستورز المتخصصة في
-                الأثاث، حيث يقدّم حلولًا فريدة ومتكاملة للمشاريع السكنية
-                والتجارية. إلى جانب عمله الميداني، المهندس أحمد معتمد في تدريب
-                المهندسين من عدة جهات، ومؤلف لعدد من الكتب المتخصصة في مجال
-                التصميم الداخلي، مما يجعله من أبرز الأسماء في هذا القطاع.
-              </Typography>
-            </Box>
-          </Box>
-        </Box>
-      </Box>
-    </Paper>
+    <div ref={aboutRef}>
+      <AboutContent />
+    </div>
   );
 }

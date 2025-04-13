@@ -7,7 +7,10 @@ export function ActionButton({
   actionText = colors.actionText,
 }) {
   return (
-    <Box sx={{ marginTop: 8, display: "flex", justifyContent: "center" }}>
+    <Box
+      className="action-button"
+      sx={{ marginTop: 8, display: "flex", justifyContent: "center" }}
+    >
       <Button
         variant="contained"
         size="large"

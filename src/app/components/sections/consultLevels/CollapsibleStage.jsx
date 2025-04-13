@@ -22,6 +22,7 @@ export function CollapsibleStage({ stage }) {
 
   return (
     <Paper
+      className="collapsable-stage"
       elevation={3}
       sx={{
         mb: 3,

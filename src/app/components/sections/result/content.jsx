@@ -14,11 +14,13 @@ export function ResultsContent() {
         bgcolor: "background.default",
       }}
     >
-      <TitleWithSubTitle
-        title={resultData.title}
-        titleColor="primary.main"
-        subTitle={resultData.subTitle}
-      />
+      <div className="result-title-wrapper">
+        <TitleWithSubTitle
+          title={resultData.title}
+          titleColor="primary.main"
+          subTitle={resultData.subTitle}
+        />
+      </div>
       <ResultCards results={resultData.results} />
       <ActionButton action={resultData.action} />
     </Box>
@@ -32,6 +34,7 @@ export function ResultCards({ results }) {
         {results.map((result, index) => (
           <Grid size={{ xs: 12, md: 6 }} key={index}>
             <Card
+              className="result-card"
               elevation={2}
               sx={{
                 height: "100%",

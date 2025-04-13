@@ -12,10 +12,12 @@ export function ConsultLevelContent() {
         backgroundColor: "primary.main",
       }}
     >
-      <TitleWithSubTitle
-        title={consultLevelsData.title}
-        subTitle={consultLevelsData.subTitle}
-      />
+      <div className="consult-level-title-wrapper">
+        <TitleWithSubTitle
+          title={consultLevelsData.title}
+          subTitle={consultLevelsData.subTitle}
+        />
+      </div>
       <Box mt={2}>
         {consultLevelsData.levels.map((level, index) => (
           <CollapsibleStage key={index} stage={level} />

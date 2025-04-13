@@ -13,6 +13,7 @@ export default function CollapsibleComponent({ title, children, index }) {
 
   return (
     <Box
+      className="collapsable-item"
       sx={{
         mb: 2,
         border: 1,

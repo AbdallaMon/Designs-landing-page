@@ -12,11 +12,13 @@ export function ConsultContent() {
       sx={{ p: 2, pt: 8, pb: 8, backgroundColor: "secondary.main" }}
       id="consult-questions"
     >
-      <TitleWithSubTitle
-        title={consultData.title}
-        subTitle={consultData.subTitle}
-        titleColor={colors.textColor}
-      />
+      <div className="consult-questions-title-wrapper">
+        <TitleWithSubTitle
+          title={consultData.title}
+          subTitle={consultData.subTitle}
+          titleColor={colors.textColor}
+        />
+      </div>
 
       {consultData.questions.map((item) => (
         <ConsultItem key={item.id} item={item} />

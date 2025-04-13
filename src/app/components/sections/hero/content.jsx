@@ -20,6 +20,7 @@ export function HeroContent() {
     >
       <img
         src="/hero/wave.svg"
+        className="hero-wave"
         style={{ position: "absolute", bottom: 0, left: 0, width: "100%" }}
       />
       <Container maxWidth="lg">
@@ -32,12 +33,15 @@ export function HeroContent() {
 }
 function HeroData() {
   return (
-    <TitleWithSubTitle title={heroData.title} subTitle={heroData.subTitle} />
+    <div className="hero-title-wrapper">
+      <TitleWithSubTitle title={heroData.title} subTitle={heroData.subTitle} />
+    </div>
   );
 }
 function HeroVideo() {
   return (
     <Box
+      className="hero-video-container"
       sx={{
         backgroundColor: "primary.main",
         borderRadius: 5,
@@ -59,6 +63,10 @@ function HeroVideo() {
   );
 }
 function HeroButton() {
-  return <ActionButton action={heroData.action} />;
+  return (
+    <div className="hero-button">
+      <ActionButton action={heroData.action} />
+    </div>
+  );
 }
 export { HeroData, HeroVideo, HeroButton };

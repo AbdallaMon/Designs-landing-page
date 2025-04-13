@@ -1,3 +1,4 @@
+import { TitleSubtitleAnimation } from "@/app/animations/TitleSubtitleAnimation";
 import colors from "@/app/helpers/colors";
 import { Box, Typography } from "@mui/material";
 export function TitleWithSubTitle({
@@ -18,6 +19,7 @@ export function TitleWithSubTitle({
     >
       <Typography
         variant="h3"
+        component="h2"
         color={titleColor}
         fontSize={30}
         fontWeight={700}

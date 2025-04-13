@@ -10,6 +10,7 @@ export function CompaniesContent() {
       id="companies"
     >
       <Box
+        className="companies-title-wrapper"
         sx={{
           display: "flex",
           flexDirection: "column",
@@ -39,6 +40,7 @@ export function CompanyCard({ logo, text, action }) {
   return (
     <Grid
       size={{ xs: 12, md: 4 }}
+      className="company-card"
       sx={{
         display: "flex",
         flexDirection: "column",
@@ -56,6 +58,7 @@ export function CompanyCard({ logo, text, action }) {
       <img
         src={logo.src}
         alt={logo.alt}
+        className="company-logo"
         width={120}
         style={{
           height: "auto",
@@ -64,6 +67,7 @@ export function CompanyCard({ logo, text, action }) {
       />
       <Typography
         variant="body1"
+        className="company-text"
         color="secondary.main"
         fontSize={20}
         mb={3}
@@ -93,6 +97,7 @@ export function CompanyCard({ logo, text, action }) {
         }}
       >
         <Box
+          className="company-button"
           sx={{
             position: "absolute",
             width: "100%",

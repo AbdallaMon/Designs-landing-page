@@ -12,12 +12,13 @@ export function FaqContent() {
       id="faq"
       sx={{ p: 2, pt: 8, pb: 8, backgroundColor: "secondary.main" }}
     >
-      <TitleWithSubTitle
-        title={faqData.title}
-        titleColor={colors.textColor}
-        subTitle={faqData.subTitle}
-      />
-
+      <div className="faq-title-wrapper">
+        <TitleWithSubTitle
+          title={faqData.title}
+          titleColor={colors.textColor}
+          subTitle={faqData.subTitle}
+        />
+      </div>
       {faqData.questions.map((item) => (
         <FaqItem key={item.id} item={item} />
       ))}

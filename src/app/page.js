@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import { About } from "./components/sections/about/about";
 import { Companies } from "./components/sections/companies/compaines";
 import { ConsultQuestions } from "./components/sections/consult-questions/consultQuestions";
@@ -13,7 +14,11 @@ import Navbar from "./components/ui/Navbar";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <Box
+      sx={{
+        overFlowX: "hidden",
+      }}
+    >
       <Navbar />
       <Hero />
       <Companies />
@@ -26,6 +31,6 @@ export default function Home() {
       <About />
       <ExtraSection />
       <Footer />
-    </div>
+    </Box>
   );
 }

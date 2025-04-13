@@ -1,5 +1,4 @@
 "use client";
-import { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Avatar from "@mui/material/Avatar";
@@ -15,6 +14,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import colors from "@/app/helpers/colors";
 import { TitleWithSubTitle } from "../../ui/TitleWithSubTitle";
+import { useMultipleScrollAnimations } from "@/app/animations/useMultipleScrollAnimations";
 
 // Testimonial Card Component
 const TestimonialCard = ({ testimonial, isMobile }) => {
@@ -119,12 +119,46 @@ const TestimonialCard = ({ testimonial, isMobile }) => {
 
 // Main component using Swiper.js
 export function TestimonialSwiper() {
+  const animations = [
+    {
+      target: ".testmonials-title-wrapper h2",
+      triggerId: ".testmonials-title-wrapper",
+      from: {
+        opacity: 0,
+        y: 30,
+        duration: 0.8,
+        ease: "power2.out",
+      },
+      to: {
+        opacity: 1,
+        y: 0,
+      },
+    },
+    {
+      target: ".testmonials-title-wrapper h3",
+      triggerId: ".testmonials-title-wrapper",
+
+      from: {
+        opacity: 0,
+        x: 30,
+        duration: 0.8,
+        ease: "power2.out",
+      },
+      to: {
+        opacity: 1,
+        x: 0,
+      },
+    },
+  ];
+  const testmonialRef = useMultipleScrollAnimations(animations);
+
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <Box
       id="testmonilas"
+      ref={testmonialRef}
       sx={{
         width: "100%",
         pb: 8,
@@ -138,11 +172,13 @@ export function TestimonialSwiper() {
         },
       }}
     >
-      <TitleWithSubTitle
-        title={testimonialsData.title}
-        subTitle={testimonialsData.subTitle}
-        titleColor="primary.main"
-      />
+      <div className="testmonials-title-wrapper">
+        <TitleWithSubTitle
+          title={testimonialsData.title}
+          subTitle={testimonialsData.subTitle}
+          titleColor="primary.main"
+        />
+      </div>
       <Swiper
         modules={[Pagination, Autoplay]}
         spaceBetween={30}

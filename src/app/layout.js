@@ -2,6 +2,7 @@ import { Noto_Kufi_Arabic } from "next/font/google";
 import "./globals.css";
 import MUIContextProvider from "./providers/MUIContext";
 import { consultLink, name } from "./main-data";
+import DotsLoader from "./components/ui/loaders/DotsLoading";
 
 const noto = Noto_Kufi_Arabic({
   weight: ["400", "500", "700"],
@@ -31,7 +32,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
       <MUIContextProvider>
-        <body className={noto.className}>{children}</body>
+        <body className={noto.className}>
+          <DotsLoader />
+
+          {children}
+        </body>
       </MUIContextProvider>
     </html>
   );

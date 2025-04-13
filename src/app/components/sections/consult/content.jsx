@@ -11,12 +11,14 @@ export function ConsultContent() {
       id="consult"
       sx={{ py: 8, px: 2, backgroundColor: "background.default" }}
     >
-      <TitleWithSubTitle
-        title={consultData.title}
-        subTitle={consultData.subTitle}
-        titleColor={colors.primary}
-      />
-      <Box my={2}>
+      <div className="consult-title-wrapper">
+        <TitleWithSubTitle
+          title={consultData.title}
+          subTitle={consultData.subTitle}
+          titleColor={colors.primary}
+        />
+      </div>
+      <Box my={2} className="consult-video-wrapper">
         <FullConsultVideoDialog video={consultData.video} />
       </Box>
       <ActionButton action={consultData.action} />
