@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <Box
       sx={{
-        overFlowX: "hidden",
+        overflowX: "hidden",
       }}
     >
       <Navbar />
