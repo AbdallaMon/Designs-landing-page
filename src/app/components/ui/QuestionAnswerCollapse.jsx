@@ -70,6 +70,7 @@ export default function CollapsibleComponent({ title, children, index }) {
             ml: 1,
             flexGrow: 1,
             fontSize: "1.2rem",
+            width: "fit-content",
           }}
         >
           {title}

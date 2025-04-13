@@ -55,6 +55,12 @@ export function ResultCards({ results }) {
                   bgcolor: "white",
                   borderRadius: "50%",
                   zIndex: 1,
+                  width: 30,
+                  height: 30,
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  boxShadow: 3,
                 }}
               >
                 <FaCheckCircle size={26} />

@@ -9,7 +9,7 @@ export const heroData = {
   description:
     "موقع رائد الاعمال هو موقع يهدف الى تقديم المعلومات والموارد اللازمة لدعم رواد الاعمال في مسيرتهم نحو النجاح.",
   video: {
-    src: "https://www.youtube.com/embed/JJu5kw5pgm4?si=6UPeto1wOBVtRj-Q",
+    src: "https://www.youtube.com/embed/Ovh-UNeKgVQ",
   },
   action: {
     text: "سجل لاستشاره معي",

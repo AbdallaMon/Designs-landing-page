@@ -17,12 +17,13 @@ export function FullConsultVideoDialog({ video }) {
         onClick={handleOpen}
         sx={{
           width: "100%",
-          height: "100%",
+          // height: "100%",
           borderRadius: "16px",
           overflow: "hidden",
           cursor: "pointer",
           position: "relative",
           transition: "transform 0.3s, box-shadow 0.3s",
+          height: "400px",
           "&:hover": {
             boxShadow: "0 12px 28px rgba(0, 0, 0, 0.25)",
           },

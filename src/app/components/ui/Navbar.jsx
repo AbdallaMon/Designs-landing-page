@@ -35,10 +35,7 @@ const sampleNavItems = [
   { label: `عن ${name}`, sectionId: "about" },
 ];
 
-const Navbar = ({
-  designerName = "محمد الدروبي",
-  navItems = sampleNavItems,
-}) => {
+const Navbar = ({ designerName = name, navItems = sampleNavItems }) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const navbarRef = useRef(null);
 
