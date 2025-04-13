@@ -74,7 +74,9 @@ const TestimonialCard = ({ testimonial, isMobile }) => {
             height: 72,
             border: `3px solid ${theme.palette.primary.light}`,
             boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
-            objectPosition: "top",
+            "& .MuiAvatar-img": {
+              objectPosition: "top",
+            },
           }}
         />
         <Box textAlign="center">
