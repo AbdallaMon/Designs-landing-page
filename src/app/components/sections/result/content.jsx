@@ -30,7 +30,7 @@ export function ResultsContent() {
 export function ResultCards({ results }) {
   return (
     <>
-      <Grid container spacing={2} sx={{ mt: 1 }}>
+      <Grid container spacing={2} sx={{ mt: 1, maxWidth: "1200px" }} mx="auto">
         {results.map((result, index) => (
           <Grid size={{ xs: 12, md: 6 }} key={index}>
             <Card

@@ -8,7 +8,7 @@ export function ExtraSectionContent() {
       id="extra-section"
       sx={{
         py: 8,
-        pb: 14,
+        pb: { xs: 14 },
         px: 2,
         backgroundColor: "background.default",
         position: "relative",
@@ -37,8 +37,10 @@ function ExtraSectionCard({ card }) {
   return (
     <Box
       className="extra-section-card"
+      mx="auto"
       sx={{
         background: card.colors.background,
+        maxWidth: "800px",
         p: 3,
         px: 2.5,
         mb: 3,

@@ -18,7 +18,14 @@ export function ConsultContent() {
           titleColor={colors.primary}
         />
       </div>
-      <Box my={2} className="consult-video-wrapper">
+      <Box
+        my={2}
+        className="consult-video-wrapper"
+        mx="auto"
+        sx={{
+          maxWidth: { md: "800px" },
+        }}
+      >
         <FullConsultVideoDialog video={consultData.video} />
       </Box>
       <ActionButton action={consultData.action} />

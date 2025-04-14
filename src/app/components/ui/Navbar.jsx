@@ -65,7 +65,10 @@ const Navbar = ({ designerName = name, navItems = sampleNavItems }) => {
           top: 15,
           borderRadius: 4,
           width: "calc(100% - 30px)",
-          margin: "0 20px",
+          maxWidth: { md: "800px" },
+          margin: "0 auto", // Changed from "0 20px" to "0 auto" for centering
+          left: 0, // Added to ensure proper centering
+          right: 0,
         }}
       >
         <Toolbar>

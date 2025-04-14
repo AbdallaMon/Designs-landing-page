@@ -27,7 +27,12 @@ export function CompaniesContent() {
           titleColor={colors.textColor}
         />
       </Box>
-      <Grid container spacing={2} sx={{ marginTop: 4 }}>
+      <Grid
+        container
+        spacing={2}
+        mx={"auto"}
+        sx={{ marginTop: 4, maxWidth: { md: "1000px" } }}
+      >
         {compainiesData.map((company) => (
           <CompanyCard key={company.id} {...company} />
         ))}
@@ -39,7 +44,7 @@ export function CompaniesContent() {
 export function CompanyCard({ logo, text, action }) {
   return (
     <Grid
-      size={{ xs: 12, md: 4 }}
+      size={{ xs: 12, md: 6 }}
       className="company-card"
       sx={{
         display: "flex",

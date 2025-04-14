@@ -13,12 +13,14 @@ export function Footer() {
       }}
     >
       <Box
+        mx="auto"
         sx={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           flexDirection: "column",
           p: 3,
+          maxWidth: { md: "800px" },
         }}
       >
         <Typography variant="h6" color="text.secondary" align="center">

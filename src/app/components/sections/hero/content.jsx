@@ -46,9 +46,23 @@ function HeroVideo() {
         backgroundColor: "primary.main",
         borderRadius: 5,
         padding: 2.5,
+        maxWidth: { xs: "100%", md: "800px" },
+        mx: "auto",
       }}
     >
-      <iframe
+      <Box
+        component="iframe"
+        width="100%"
+        sx={{
+          maxWidth: { xs: "100%", md: "800px" },
+          height: { xs: "200px", md: "400px" },
+        }}
+        src={heroData.video.src}
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+      {/* <iframe
         width="100%"
         style={{
           maxWidth: "100%",
@@ -58,7 +72,7 @@ function HeroVideo() {
         title="YouTube video player"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
-      ></iframe>
+      ></iframe> */}
     </Box>
   );
 }

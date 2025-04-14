@@ -1,11 +1,20 @@
 "use client";
 
-import { Box, Collapse, Typography } from "@mui/material";
+import {
+  Box,
+  Collapse,
+  Typography,
+  useTheme,
+  useMediaQuery,
+} from "@mui/material";
 import { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
 
 export default function CollapsibleComponent({ title, children, index }) {
   const [isOpen, setIsOpen] = useState(false);
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isTablet = useMediaQuery(theme.breakpoints.between("sm", "md"));
 
   const toggleCollapse = () => {
     setIsOpen(!isOpen);
@@ -17,6 +26,9 @@ export default function CollapsibleComponent({ title, children, index }) {
       sx={{
         mb: 2,
         border: 1,
+        width: "100%", // Full width of container
+        maxWidth: { md: "700px" },
+        mx: "auto",
         py: 0.5,
         backgroundColor: "primary.main",
         borderColor: "grey.300",
@@ -28,9 +40,8 @@ export default function CollapsibleComponent({ title, children, index }) {
           display: "flex",
           justifyContent: "flex-start",
           alignItems: "center",
-          p: 2,
+          p: { xs: 1.5, sm: 2 }, // Smaller padding on mobile
           cursor: "pointer",
-
           borderRadius: isOpen ? "4px 4px 0 0" : 1,
         }}
         onClick={toggleCollapse}
@@ -41,23 +52,28 @@ export default function CollapsibleComponent({ title, children, index }) {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            width: 30,
-            height: 30,
+            width: { xs: 24, sm: 30 }, // Smaller on mobile
+            height: { xs: 24, sm: 30 },
             borderRadius: "50%",
             border: "1px solid ",
+            flexShrink: 0, // Prevent shrinking
           }}
         >
-          {isOpen ? <FaMinus size={18} /> : <FaPlus size={18} />}
+          {isOpen ? (
+            <FaMinus size={isMobile ? 14 : 18} />
+          ) : (
+            <FaPlus size={isMobile ? 14 : 18} />
+          )}
         </Box>
 
-        <Box sx={{ color: "secondary.main" }}>
+        <Box sx={{ color: "secondary.main", flexShrink: 0 }}>
           <Typography
             variant="subtitle1"
             fontWeight="medium"
             color="secondary.main"
             sx={{
               ml: 1,
-              fontSize: "1.2rem",
+              fontSize: { xs: "1rem", sm: "1.1rem", md: "1.2rem" },
             }}
           >
             {index}
@@ -70,33 +86,25 @@ export default function CollapsibleComponent({ title, children, index }) {
           sx={{
             ml: 1,
             flexGrow: 1,
-            fontSize: "1.2rem",
-            width: "fit-content",
+            fontSize: { xs: "1rem", sm: "1.1rem", md: "1.2rem" },
+            width: "auto",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+            whiteSpace: isMobile ? "normal" : "nowrap",
           }}
         >
           {title}
         </Typography>
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            color: "grey.600",
-          }}
-          aria-expanded={isOpen}
-          aria-label={isOpen ? "Collapse" : "Expand"}
-        ></Box>
       </Box>
 
       <Collapse in={isOpen} timeout="auto" unmountOnExit>
-        <Box sx={{ p: 2, px: 3 }}>
+        <Box sx={{ p: { xs: 1.5, sm: 2 }, px: { xs: 2, sm: 3 } }}>
           <Typography
             variant="body1"
             fontWeight="regular"
             color="white"
             sx={{
-              fontSize: "1.1rem",
-
+              fontSize: { xs: "0.95rem", sm: "1rem", md: "1.1rem" },
               whiteSpace: "pre-line",
             }}
           >

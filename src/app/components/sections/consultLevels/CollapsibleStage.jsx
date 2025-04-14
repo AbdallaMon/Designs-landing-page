@@ -26,6 +26,8 @@ export function CollapsibleStage({ stage }) {
       elevation={3}
       sx={{
         mb: 3,
+        mx: "auto",
+        maxWidth: { md: "800px" },
         borderRadius: 2,
         overflow: "hidden",
         transition: "all 0.3s ease",

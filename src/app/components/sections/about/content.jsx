@@ -11,7 +11,14 @@ export function AboutContent() {
         background: "Background.default",
       }}
     >
-      <Box sx={{ p: 0, position: "relative" }}>
+      <Box
+        mx="auto"
+        sx={{
+          p: 0,
+          position: "relative",
+          maxWidth: { md: "800px", lg: "1000px" },
+        }}
+      >
         <Box
           sx={{
             p: 2,
@@ -108,6 +115,8 @@ export function AboutContent() {
                 variant="body1"
                 textAlign={"left"}
                 fontSize={18}
+                maxWidth={{ md: "800px" }}
+                mx="auto"
               >
                 المهندس أحمد المبيض هو مهندس معماري متخصص في التصميم الداخلي
                 وصانع محتوى بارز، تجاوزت مشاهداته على السوشيال ميديا مليار
