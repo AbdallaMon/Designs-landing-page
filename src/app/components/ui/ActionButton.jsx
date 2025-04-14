@@ -23,6 +23,7 @@ export function ActionButton({
           color: actionText,
           "&:hover": {
             backgroundColor: "primary.dark",
+            color: "white",
           },
           padding: 2,
           borderRadius: "50px",
