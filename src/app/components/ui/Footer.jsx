@@ -62,6 +62,7 @@ export function Footer() {
             mt: 1,
             mb: -1,
             fontSize: "0.9rem",
+            direction: "rtl",
           }}
         >
           Made with love by{" "}
