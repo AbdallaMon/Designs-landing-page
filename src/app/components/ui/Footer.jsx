@@ -53,6 +53,33 @@ export function Footer() {
         <Typography variant="body2" color="text.secondary" align="center">
           جميع الحقوق محفوظة © 2025 {name}
         </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            mx: "auto",
+            color: "#555",
+            mt: 1,
+            mb: -1,
+            fontSize: "0.9rem",
+          }}
+        >
+          Made with love by{" "}
+          <a
+            href="https://mostaql.com/u/Abdallamy"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: "#0066cc",
+              marginLeft: "5px",
+              textDecoration: "none",
+              fontWeight: "bold",
+              transition: "color 0.3s ease",
+            }}
+          >
+            AbdallaMon
+          </a>
+        </Box>
       </Box>
     </Box>
   );
