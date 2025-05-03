@@ -6,7 +6,7 @@ export const consultData = {
   },
   subTitle: "اجعل منزلك براندك الخاص",
   action: {
-    text: "اطلب استشارة لمنزلك",
+    text: "احجز اجتماع معي الان",
     link: consultLink,
   },
   video: {

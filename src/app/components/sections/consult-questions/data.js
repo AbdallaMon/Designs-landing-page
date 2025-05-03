@@ -6,7 +6,7 @@ export const consultData = {
   },
   subTitle: "وتنفيذ المشاريع",
   action: {
-    text: "احجز استشارتك الان",
+    text: "احجز اجتماع معي الان",
     url: consultLink,
   },
   questions: [

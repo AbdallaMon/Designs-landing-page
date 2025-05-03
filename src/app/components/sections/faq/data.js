@@ -6,7 +6,7 @@ export const faqData = {
   },
   subTitle: "استشارات الشركات",
   action: {
-    text: "احجز استشارتك الان",
+    text: "احجز اجتماع معي الان",
     url: consultLink,
   },
   questions: [

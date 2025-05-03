@@ -23,7 +23,7 @@ export const extraSectionData = {
         color: colors.primaryMatched,
       },
       action: {
-        text: "احجز استشارة الآن",
+        text: "احجز اجتماع معي الآن",
         url: consultLink,
       },
     },

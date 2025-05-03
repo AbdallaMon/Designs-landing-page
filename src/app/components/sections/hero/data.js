@@ -12,7 +12,7 @@ export const heroData = {
     src: "https://www.youtube.com/embed/Ovh-UNeKgVQ",
   },
   action: {
-    text: "سجل لاستشاره معي",
+    text: "احجز اجتماع معي",
     url: consultLink,
   },
   background: {
