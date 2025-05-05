@@ -9,6 +9,8 @@ export function AboutContent() {
       elevation={3}
       sx={{
         background: "Background.default",
+        position: "relative",
+        zIndex: 100,
       }}
     >
       <Box

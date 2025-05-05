@@ -1,7 +1,7 @@
 import colors from "@/app/helpers/colors";
 import { name } from "@/app/main-data";
 import { Box, lighten, Typography } from "@mui/material";
-import { FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaTiktok, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { IoLocation } from "react-icons/io5";
 
 export function Footer() {
@@ -100,6 +100,10 @@ export function SocialMediaIconsLinks() {
       <SocialMedia
         link="https://www.youtube.com/@ahmadalmobayed"
         icon={FaYoutube}
+      />
+      <SocialMedia
+        link="whatsapp://send?phone=+971585564778"
+        icon={FaWhatsapp}
       />
     </Box>
   );
