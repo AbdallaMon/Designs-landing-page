@@ -1,12 +1,10 @@
-import { consultData } from "./data";
-
 import { Box } from "@mui/material";
 import CollapsibleComponent from "@/app/components/ui/QuestionAnswerCollapse";
 import { TitleWithSubTitle } from "../../ui/TitleWithSubTitle";
 import colors from "@/app/helpers/colors";
 import { ActionButton } from "../../ui/ActionButton";
 
-export function ConsultContent() {
+export function ConsultContent({ consultData }) {
   return (
     <Box
       sx={{ p: 2, pt: 8, pb: 8, backgroundColor: "secondary.main" }}

@@ -1,17 +1,21 @@
+import { socialLinks } from "@/app/data/utility";
 import colors from "@/app/helpers/colors";
-import { name } from "@/app/main-data";
 import { Box, lighten, Typography } from "@mui/material";
-import { FaInstagram, FaTiktok, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { IoLocation } from "react-icons/io5";
 
-export function Footer() {
+export function Footer({ footerContent }) {
+  const {
+    name,
+    location,
+    mapUrl,
+    rights,
+    madeWith,
+    developerName,
+    developerLink,
+  } = footerContent;
+
   return (
-    <Box
-      component="footer"
-      sx={{
-        backgroundColor: "primary.main",
-      }}
-    >
+    <Box component="footer" sx={{ backgroundColor: "primary.main" }}>
       <Box
         mx="auto"
         sx={{
@@ -24,14 +28,16 @@ export function Footer() {
         }}
       >
         <Typography variant="h6" color="text.secondary" align="center">
-          {name}{" "}
+          {name}
         </Typography>
-        <SocialMediaIconsLinks />
+
+        <SocialMediaIconsLinks socialLinks={socialLinks} />
+
         <Box
           component="a"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://maps.app.goo.gl/SRyUWLH7F5nNAycg8?g_st=com.google.maps.preview.copy"
+          href={mapUrl}
           sx={{
             display: "flex",
             gap: 2,
@@ -46,13 +52,15 @@ export function Footer() {
           }}
         >
           <SocialMedia icon={IoLocation} size={20} type="div" />
-          Dubai / Donna Towers 2308{" "}
+          {location}
         </Box>
       </Box>
+
       <Box sx={{ mt: 3, py: 2, borderTop: 1, borderColor: "divider" }}>
         <Typography variant="body2" color="text.secondary" align="center">
-          جميع الحقوق محفوظة © 2025 {name}
+          {rights}
         </Typography>
+
         <Box
           sx={{
             display: "flex",
@@ -65,9 +73,9 @@ export function Footer() {
             direction: "rtl",
           }}
         >
-          Made with love by{" "}
+          {madeWith}{" "}
           <a
-            href="https://mostaql.com/u/Abdallamy"
+            href={developerLink}
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -78,36 +86,24 @@ export function Footer() {
               transition: "color 0.3s ease",
             }}
           >
-            AbdallaMon
+            {developerName}
           </a>
         </Box>
       </Box>
     </Box>
   );
 }
-export function SocialMediaIconsLinks() {
+
+export function SocialMediaIconsLinks({ socialLinks }) {
   return (
     <Box sx={{ display: "flex", gap: 2, mt: 3, justifyContent: "center" }}>
-      <SocialMedia
-        link="https://www.instagram.com/eng.ahmad_almobayed/?hl=ar"
-        icon={FaInstagram}
-      />
-
-      <SocialMedia
-        link="https://www.tiktok.com/@ahmadmobayed"
-        icon={FaTiktok}
-      />
-      <SocialMedia
-        link="https://www.youtube.com/@ahmadalmobayed"
-        icon={FaYoutube}
-      />
-      <SocialMedia
-        link="whatsapp://send?phone=+971585564778"
-        icon={FaWhatsapp}
-      />
+      {socialLinks.map((item, index) => (
+        <SocialMedia key={index} link={item.link} icon={item.icon} />
+      ))}
     </Box>
   );
 }
+
 export function SocialMedia({ link, icon, size = 26, type = "a" }) {
   const Icon = icon;
   return (
@@ -125,7 +121,6 @@ export function SocialMedia({ link, icon, size = 26, type = "a" }) {
         width: size <= 20 ? 40 : 48,
         height: size <= 20 ? 40 : 48,
         borderRadius: "50%",
-
         backgroundColor: lighten(colors.primary, 0.4),
       }}
     >

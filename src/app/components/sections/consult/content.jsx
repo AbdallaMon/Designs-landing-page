@@ -1,11 +1,10 @@
 import { Box } from "@mui/material";
 import { TitleWithSubTitle } from "../../ui/TitleWithSubTitle";
-import { consultData } from "./data";
 import { FullConsultVideoDialog } from "./ConsultVideoModal";
 import { ActionButton } from "../../ui/ActionButton";
 import colors from "@/app/helpers/colors";
 
-export function ConsultContent() {
+export function ConsultContent({ consultData }) {
   return (
     <Box
       id="consult"

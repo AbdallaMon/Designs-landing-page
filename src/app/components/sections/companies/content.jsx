@@ -1,9 +1,8 @@
 import colors from "@/app/helpers/colors";
 import { Box, Button, Grid, Typography } from "@mui/material";
-import { compainiesData } from "./data";
 import { TitleWithSubTitle } from "../../ui/TitleWithSubTitle";
 
-export function CompaniesContent() {
+export function CompaniesContent({ companies }) {
   return (
     <Box
       sx={{ backgroundColor: "secondary.main", padding: 2, pt: 0 }}
@@ -21,9 +20,9 @@ export function CompaniesContent() {
       >
         <TitleWithSubTitle
           title={{
-            firstLine: "المواقع الالكترونيه",
+            firstLine: companies.titleFirstLine,
           }}
-          subTitle="لشركاتي"
+          subTitle={companies.subtitle}
           titleColor={colors.textColor}
         />
       </Box>
@@ -33,8 +32,16 @@ export function CompaniesContent() {
         mx={"auto"}
         sx={{ marginTop: 4, maxWidth: { md: "1000px" } }}
       >
-        {compainiesData.map((company) => (
-          <CompanyCard key={company.id} {...company} />
+        {companies.list.map((company, index) => (
+          <CompanyCard
+            key={company.id}
+            logo={company.logo}
+            text={company.text}
+            action={{
+              text: company.actionText,
+              url: company.action.url,
+            }}
+          />
         ))}
       </Grid>
     </Box>

@@ -1,8 +1,8 @@
 import { Box, Typography, Paper, lighten } from "@mui/material";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, Fankedin } from "react-icons/fa";
 import colors from "@/app/helpers/colors";
-import { consultLink, name } from "@/app/main-data";
-export function AboutContent() {
+import { consultLink } from "@/app/main-data";
+export function AboutContent({ about }) {
   return (
     <Paper
       id="about"
@@ -31,6 +31,7 @@ export function AboutContent() {
             alignItems: "center",
           }}
         >
+          {/* Profile Image */}
           <Box
             className="about-image"
             sx={{
@@ -42,7 +43,7 @@ export function AboutContent() {
           >
             <img
               src="/about/personal.jpeg"
-              alt={`المهندس احمد صاحب موقع دريم استوديو ${consultLink}`}
+              alt={`${about.title} ${consultLink}`}
               style={{
                 maxWidth: "100%",
                 maxHeight: 400,
@@ -52,8 +53,10 @@ export function AboutContent() {
             />
           </Box>
 
+          {/* Title and Content */}
           <Box>
             <Box sx={{ textAlign: "right", direction: "rtl" }}>
+              {/* Title */}
               <Typography
                 className="about-title-wrapper"
                 variant="h5"
@@ -70,8 +73,10 @@ export function AboutContent() {
                   mb: 2,
                 }}
               >
-                <div className="about-title">عن {name}</div>
+                <div className="about-title">{about.title}</div>
               </Typography>
+
+              {/* Instagram Link */}
               <Box
                 component="a"
                 target="_blank"
@@ -108,10 +113,11 @@ export function AboutContent() {
                   textAlign={"center"}
                   fontSize={18}
                 >
-                  Ahmed Almobayed
+                  {about.linkName}
                 </Typography>
               </Box>
 
+              {/* Description */}
               <Typography
                 className="about-content"
                 variant="body1"
@@ -120,15 +126,7 @@ export function AboutContent() {
                 maxWidth={{ md: "800px" }}
                 mx="auto"
               >
-                المهندس أحمد المبيض هو مهندس معماري متخصص في التصميم الداخلي
-                وصانع محتوى بارز، تجاوزت مشاهداته على السوشيال ميديا مليار
-                مشاهدة. يُعرف بتقديمه أفكارًا مبتكرة يوميًا، تجمع بين الإبداع
-                العملي والجمال البصري. يمتلك شركتين رائدتين في المجال: دريم
-                استديو للتصميم والتنفيذ الداخلي، وديكور ستورز المتخصصة في
-                الأثاث، حيث يقدّم حلولًا فريدة ومتكاملة للمشاريع السكنية
-                والتجارية. إلى جانب عمله الميداني، المهندس أحمد معتمد في تدريب
-                المهندسين من عدة جهات، ومؤلف لعدد من الكتب المتخصصة في مجال
-                التصميم الداخلي، مما يجعله من أبرز الأسماء في هذا القطاع.
+                {about.description}
               </Typography>
             </Box>
           </Box>

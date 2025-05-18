@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import {
   AppBar,
   Toolbar,
@@ -18,27 +18,12 @@ import { BiMenuAltRight as Menu } from "react-icons/bi";
 import colors from "@/app/helpers/colors";
 import { SocialMediaIconsLinks } from "./Footer";
 import { name } from "@/app/main-data";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { socialLinks } from "@/app/data/utility";
 
-const sampleNavItems = [
-  { label: "الرئيسية", sectionId: "hero" },
-  {
-    label: "اسئلة حول استشارات التصميم الداخلي ",
-    sectionId: "consult-questions",
-  },
-  { label: "ما الذي سوف اتعلمه", sectionId: "consult" },
-
-  { label: "مراحل استشارات المشاريع والفنادق", sectionId: "consult-level" },
-  { label: "ما هي النتائج المتوقعه", sectionId: "results" },
-  { label: "اراء بعض المشاركين", sectionId: "testmonilas" },
-
-  { label: "الأسئلة الشائعة", sectionId: "faq" },
-  { label: `عن ${name}`, sectionId: "about" },
-];
-
-const Navbar = ({ designerName = name, navItems = sampleNavItems }) => {
+const Navbar = ({ lng, designerName = name, navItems }) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const navbarRef = useRef(null);
-
   const handleDrawerToggle = () => {
     setDrawerOpen(!drawerOpen);
   };
@@ -85,7 +70,7 @@ const Navbar = ({ designerName = name, navItems = sampleNavItems }) => {
             <Menu size={28} color="white" />
           </IconButton>
           <Typography
-            variant="h6"
+            variant="body1"
             component="div"
             sx={{
               flexGrow: 1,
@@ -95,6 +80,7 @@ const Navbar = ({ designerName = name, navItems = sampleNavItems }) => {
           >
             {designerName}
           </Typography>
+          <LanguageSwitcher lng={lng} />
         </Toolbar>
       </AppBar>
 
@@ -159,7 +145,7 @@ const Navbar = ({ designerName = name, navItems = sampleNavItems }) => {
             ))}
           </List>
           <Box mt={3}>
-            <SocialMediaIconsLinks />
+            <SocialMediaIconsLinks socialLinks={socialLinks} />
           </Box>
         </Box>
       </Drawer>

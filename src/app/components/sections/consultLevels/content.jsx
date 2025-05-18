@@ -1,9 +1,8 @@
 import { Box } from "@mui/material";
 import { TitleWithSubTitle } from "../../ui/TitleWithSubTitle";
 import { CollapsibleStage } from "./CollapsibleStage";
-import { consultLevelsData } from "./data";
 
-export function ConsultLevelContent() {
+export function ConsultLevelContent({ consultLevelsData }) {
   return (
     <Box
       sx={{

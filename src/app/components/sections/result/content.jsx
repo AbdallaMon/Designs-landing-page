@@ -1,10 +1,9 @@
 import { Box, Card, CardContent, Grid, Paper, Typography } from "@mui/material";
 import { ActionButton } from "../../ui/ActionButton";
 import { TitleWithSubTitle } from "../../ui/TitleWithSubTitle";
-import { resultData } from "./data";
 import { FaCheckCircle } from "react-icons/fa";
 
-export function ResultsContent() {
+export function ResultsContent({ resultData }) {
   return (
     <Box
       id="results"

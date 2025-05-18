@@ -1,9 +1,8 @@
 import { Box, Container } from "@mui/material";
-import { heroData } from "./data";
 import { TitleWithSubTitle } from "../../ui/TitleWithSubTitle";
 import { ActionButton } from "../../ui/ActionButton";
 
-export function HeroContent() {
+export function HeroContent({ heroData }) {
   return (
     <Box
       id="hero"
@@ -24,21 +23,21 @@ export function HeroContent() {
         style={{ position: "absolute", bottom: 0, left: 0, width: "100%" }}
       />
       <Container maxWidth="lg">
-        <HeroData />
-        <HeroVideo />
-        <HeroButton />
+        <HeroData heroData={heroData} />
+        <HeroVideo heroData={heroData} />
+        <HeroButton heroData={heroData} />
       </Container>
     </Box>
   );
 }
-function HeroData() {
+function HeroData({ heroData }) {
   return (
     <div className="hero-title-wrapper">
       <TitleWithSubTitle title={heroData.title} subTitle={heroData.subTitle} />
     </div>
   );
 }
-function HeroVideo() {
+function HeroVideo({ heroData }) {
   return (
     <Box
       className="hero-video-container"
@@ -76,7 +75,7 @@ function HeroVideo() {
     </Box>
   );
 }
-function HeroButton() {
+function HeroButton({ heroData }) {
   return (
     <div className="hero-button">
       <ActionButton action={heroData.action} />

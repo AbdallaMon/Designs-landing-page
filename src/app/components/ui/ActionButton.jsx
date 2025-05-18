@@ -27,9 +27,10 @@ export function ActionButton({
           },
           padding: 2,
           borderRadius: "50px",
-          fontSize: 20,
-          px: 4,
+          fontSize: 16,
+          px: 3,
           fontWeight: 700,
+          textAlign: "center",
         }}
       >
         {action.text}

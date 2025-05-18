@@ -1,6 +1,7 @@
 "use client";
 
 import { Box, Button, Dialog, Paper } from "@mui/material";
+import { useParams } from "next/navigation";
 import { useState } from "react";
 import { FaPlay } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
@@ -9,6 +10,8 @@ export function FullConsultVideoDialog({ video }) {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const params = useParams();
+  const lng = params.lng;
   return (
     <>
       <Paper
@@ -122,7 +125,7 @@ export function FullConsultVideoDialog({ video }) {
             },
           }}
         >
-          اغلاق
+          {lng === "ar" ? "اغلاق" : "Close"}{" "}
         </Button>
       </Dialog>
     </>

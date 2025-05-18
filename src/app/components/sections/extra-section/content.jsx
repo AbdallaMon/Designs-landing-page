@@ -1,8 +1,7 @@
 import { Box, Typography } from "@mui/material";
-import { extraSectionData } from "./data";
 import { ActionButton } from "../../ui/ActionButton";
 
-export function ExtraSectionContent() {
+export function ExtraSectionContent({ extraSectionData }) {
   return (
     <Box
       id="extra-section"

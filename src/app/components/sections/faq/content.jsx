@@ -1,12 +1,10 @@
-import { faqData } from "./data";
-
 import { Box } from "@mui/material";
 import CollapsibleComponent from "@/app/components/ui/QuestionAnswerCollapse";
 import { TitleWithSubTitle } from "../../ui/TitleWithSubTitle";
 import colors from "@/app/helpers/colors";
 import { ActionButton } from "../../ui/ActionButton";
 
-export function FaqContent() {
+export function FaqContent({ faqData }) {
   return (
     <Box
       id="faq"

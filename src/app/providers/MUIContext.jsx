@@ -10,7 +10,10 @@ const cacheRtl = createCache({
   key: "muirtl",
   stylisPlugins: [rtlPlugin],
 });
-
+const cacheLtr = createCache({
+  key: "muiltr",
+  // No stylisPlugins means default LTR
+});
 const theme = createTheme({
   palette: {
     primary: {
@@ -100,10 +103,12 @@ const theme = createTheme({
   },
 });
 
-export default function MUIContextProvider({ children }) {
+export default function MUIContextProvider({ children, lng }) {
   return (
     <ThemeProvider theme={theme}>
-      <CacheProvider value={cacheRtl}>{children}</CacheProvider>
+      <CacheProvider value={lng === "ar" ? cacheRtl : cacheLtr}>
+        {children}
+      </CacheProvider>
     </ThemeProvider>
   );
 }
