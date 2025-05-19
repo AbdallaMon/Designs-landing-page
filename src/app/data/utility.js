@@ -113,6 +113,6 @@ export const socialLinks = [
   },
   {
     icon: FaWhatsapp,
-    link: "whatsapp://send?phone=+971585564778",
+    link: "https://wa.me/971585564778",
   },
 ];

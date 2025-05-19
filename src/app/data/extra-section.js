@@ -40,7 +40,7 @@ export const extraSectionTranslations = {
           color: colors.primaryMatched,
         },
         action: {
-          text: "احجز اجتماع معي الآن",
+          text: "احجز اجتماعًا معي الآن",
           url: consultLink,
         },
       },

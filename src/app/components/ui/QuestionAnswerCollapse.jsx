@@ -90,7 +90,7 @@ export default function CollapsibleComponent({ title, children, index }) {
             width: "auto",
             overflow: "hidden",
             textOverflow: "ellipsis",
-            whiteSpace: isMobile ? "normal" : "nowrap",
+            whiteSpace: isMobile ? "normal" : "normal",
           }}
         >
           {title}

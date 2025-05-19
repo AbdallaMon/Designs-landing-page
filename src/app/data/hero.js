@@ -33,7 +33,7 @@ export const heroTranslations = {
       src: "https://www.youtube.com/embed/Ovh-UNeKgVQ",
     },
     action: {
-      text: "احجز اجتماع معي",
+      text: "احجز اجتماعًا معي",
       url: consultLink,
     },
     background: {

@@ -13,8 +13,8 @@ export const consultQuestionsTranslations = {
     questions: [
       {
         id: 1,
-        question: "Is this consultation right for me?",
-        answer: `If you have an interior design project and are looking for fresh ideas or practical solutions before execution, then this consultation is perfect for you. Engineer Ahmed will listen to your needs and guide you with the most suitable approach for your space — tailored to your taste, budget, and with thoughtful ideas that reflect your personal style.`,
+        question: "Is this consultation suitable for me?",
+        answer: `If you have an interior design project and are looking for fresh ideas or practical solutions before execution, then this consultation is perfect for you. Ahmed will listen carefully to your needs and guide you with the most suitable approach for your space — tailored to your taste, budget, and with thoughtful ideas that reflect your personal style.`,
       },
       {
         id: 2,
@@ -23,7 +23,7 @@ export const consultQuestionsTranslations = {
 My skills lie in analyzing every aspect of interior design and spotting areas that might be inefficient or costly.
 I can resolve these issues and turn them into positive features that add value to your project.
 
-Even if you believe your project already has the best outcome, I’ll prove otherwise.
+Even if you believe your project is already perfect, I’ll show you otherwise.
 My team and I elevate your project using the same methods we’ve applied in luxury hotels and top global brands.
 Proof and examples are all over our social media pages.
 A simple example: while all companies offer similar designs, at Dream Studio we don’t just give you an ordinary design; we transform your home into something unique and exceptional.
@@ -38,7 +38,7 @@ If you notice that my ideas don’t exist elsewhere, it’s because of our rich 
         answer: `If you find some of my ideas illogical, it's simply because we don’t follow traditional logic.
 True success doesn’t come from doing the usual, but from breaking boundaries and trying new ideas.
 
-Just like how Burj Khalifa revolutionized architecture in a desert environment, or how Palm Island turned an artificial island into a global icon of beauty and innovation. The Museum of the Future offers a bold vision in contemporary design, and Dubai Marina blends residential and commercial spaces with groundbreaking architectural styles.
+Just as the Burj Khalifa revolutionized architecture in a desert environment, or how Palm Island turned an artificial island into a global icon of beauty and innovation. The Museum of the Future offers a bold vision in contemporary design, and Dubai Marina blends residential and commercial spaces with groundbreaking architectural styles.
 
 We don’t deliver ordinary designs or recycled concepts — we create entirely unique experiences in every project.
 If that seems illogical to you, it’s a sign that we’re actually doing something remarkable and unconventional — just like the UAE's bold projects that proved out-of-the-box ideas lead to global success.`,
@@ -46,7 +46,7 @@ If that seems illogical to you, it’s a sign that we’re actually doing someth
       {
         id: 4,
         question: "Do I need a large budget to do interior design?",
-        answer: `The biggest myth we’ve lived with! Great interior design doesn’t require a big budget — especially when working with a professional team. We prove that creativity and expertise can produce amazing designs without spending a fortune. It’s the details and creative touches that make the real difference.`,
+        answer: `One of the biggest myths out there! Great interior design doesn’t require a big budget — especially when working with a professional team. We prove that creativity and expertise can produce amazing designs without spending a fortune. It’s the details and creative touches that make the real difference.`,
       },
       {
         id: 5,

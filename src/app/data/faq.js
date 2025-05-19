@@ -102,7 +102,7 @@ export const faqTranslations = {
     },
     subTitle: "استشارات الشركات",
     action: {
-      text: "احجز اجتماع معي الان",
+      text: "احجز اجتماعًا معي الان",
       url: consultLink,
     },
     questions: [

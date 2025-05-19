@@ -12,7 +12,7 @@ export const consultLevelsTranslations = {
           normal: "A deep reading of your interior project",
         },
         details: [
-          `Have you ever thought about adding a special touch that highlights the strength of your home design? Imagine investing in designs that showcase luxury and comfort in a way that suits you perfectly, making your home unique and distinguished. There might be hidden issues that affect your family's comfort or your space’s aesthetic without you realizing — that's what we focus on.
+          `Have you ever thought about adding a unique touch that enhances the strengths of your home design? Imagine investing in designs that showcase luxury and comfort in a way that suits you perfectly, making your home unique and distinguished. There might be hidden issues that affect your family's comfort or your space’s aesthetic without you realizing — that's what we focus on.
 
 In this stage, we conduct a comprehensive analysis of every corner in your home, from space distribution to the smallest design details. The goal is to uncover weak points that may hinder optimal use of space and identify strengths to enhance with innovative solutions.
 
@@ -29,7 +29,7 @@ Together, we’ll develop a detailed improvement plan to transform your home int
           `In this stage, we create a practical layout for how furniture and functional elements will be distributed in the space.
 We optimize the layout to ensure every square meter of your home is used efficiently, with a focus on comfort, flow, and ease of movement.
 
-We take into account all your needs and preferences and translate them into an ideal layout that suits your lifestyle — whether you prioritize functionality or emphasize aesthetics and luxury. The aim is to create a design that truly serves you and offers a comfortable, integrated living experience.`,
+We consider all your needs and preferences and translate them into an ideal layout that suits your lifestyle — whether you prioritize functionality or emphasize aesthetics and luxury. The aim is to create a design that truly serves you and offers a comfortable, integrated living experience.`,
         ],
       },
       {
@@ -53,7 +53,7 @@ Our goal is for you to live the experience beforehand — offering innovative, m
           normal: "Shop Drawing Plans",
         },
         details: [
-          `Once the final design is approved, we start preparing detailed Shop Drawing plans — the execution drawings used as a primary reference during implementation.
+          `After approving the final design, we prepare detailed Shop Drawings — the execution drawings used as a primary reference during implementation.
 
 This stage includes precise measurements, materials, lighting locations, wiring, furniture placement, ceiling details, and more.
 These plans ensure the project is implemented exactly as agreed upon in the designs and minimize errors or adjustments during construction.
@@ -120,7 +120,7 @@ We offer you strategic marketing guidance to highlight your project's strengths 
           normal: "قراءة دقيقة لمشروعك من الداخل",
         },
         details: [
-          `ل فكرت يومًا في إيجاد لمسة خاصة تبرز قوة تصميم منزلك؟ تخيل لو استثمرت في تصاميم تُبرز الفخامة والراحة بأسلوب يناسبك تمامًا، بحيث يظهر منزلك مميزًا وفريدًا. ربما توجد بعض الثغرات التي قد تؤثر على راحة عائلتك أو على جمالية المساحات لديك دون أن تلاحظها، وهذا ما نركز عليه.
+          `هل فكرت يومًا في إيجاد لمسة خاصة تبرز قوة تصميم منزلك؟ تخيل لو استثمرت في تصاميم تُبرز الفخامة والراحة بأسلوب يناسبك تمامًا، بحيث يظهر منزلك مميزًا وفريدًا. ربما توجد بعض الثغرات التي قد تؤثر على راحة عائلتك أو على جمالية المساحات لديك دون أن تلاحظها، وهذا ما نركز عليه.
 
 في هذه المرحلة، نقوم بتحليل شامل لكل زاوية في منزلك، بدءًا من توزيع المساحات وحتى أدق تفاصيل التصميم الداخلي. الهدف هو اكتشاف أي نقاط ضعف قد تعيق استغلال المساحات بأفضل شكل، وتحديد مواطن القوة لتعزيزها بطرق مبتكرة.
 
