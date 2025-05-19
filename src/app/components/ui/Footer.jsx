@@ -70,7 +70,6 @@ export function Footer({ footerContent }) {
             mt: 1,
             mb: -1,
             fontSize: "0.9rem",
-            direction: "rtl",
           }}
         >
           {madeWith}{" "}

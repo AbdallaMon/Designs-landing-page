@@ -46,7 +46,7 @@ const Navbar = ({ lng, designerName = name, navItems }) => {
         ref={navbarRef}
         sx={{
           backgroundColor: "primary.main",
-          zIndex: 10,
+          zIndex: 1000,
           top: 15,
           borderRadius: 4,
           width: "calc(100% - 30px)",

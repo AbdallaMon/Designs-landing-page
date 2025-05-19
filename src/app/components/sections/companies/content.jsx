@@ -38,7 +38,7 @@ export function CompaniesContent({ companies }) {
             logo={company.logo}
             text={company.text}
             action={{
-              text: company.actionText,
+              text: company.action.text,
               url: company.action.url,
             }}
           />
