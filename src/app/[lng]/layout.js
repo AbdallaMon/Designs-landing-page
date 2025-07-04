@@ -13,7 +13,7 @@ const noto = Noto_Kufi_Arabic({
 
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
-  const { t } = await getTranslation(resolvedParams.lng);
+  const { t } = await getTranslation(resolvedParams.lng || "ar");
   const meta = t("meta", {
     returnObjects: true,
   });
