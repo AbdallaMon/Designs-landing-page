@@ -72,8 +72,8 @@ export const metaTranslations = {
       title: "Dream Studio | Luxury Home Designs by Eng. Ahmad Almobayed",
       description:
         "Dream Studio, led by Eng. Ahmad Almobayed, offers luxury interior designs and innovative housing solutions that combine elegance, luxury, and functionality. Over 15 years of experience in designing and executing residential and commercial projects.",
-      image: "/about/personal.jpeg",
-      url: "https://engahmadmobayed.com/",
+      image: "https://eng.ahmadmobayed.com/about/personal.jpeg",
+      url: "https://eng.ahmadmobayed.com/",
     },
     icons: {
       icon: "/favicon.ico",
@@ -85,7 +85,7 @@ export const metaTranslations = {
       title: "Dream Studio | Luxury Home Designs by Eng. Ahmad Almobayed",
       description:
         "Transforming visions into luxurious and elegant living spaces.",
-      images: ["/about/personal.jpeg"],
+      images: ["https://eng.ahmadmobayed.com/about/personal.jpeg"],
     },
   },
   ar: {
@@ -96,8 +96,8 @@ export const metaTranslations = {
       title: "دريم ستوديو | تصاميم منازل فاخرة بإدارة المهندس أحمد المبيض",
       description:
         "دريم ستوديو بإدارة المهندس أحمد المبيض يقدم تصاميم داخلية فاخرة وحلول سكنية مبتكرة تجمع بين الأناقة والرفاهية والوظيفية. خبرة أكثر من 15 عاماً في تصميم وتنفيذ المشاريع السكنية والتجارية.",
-      image: "/about/personal.jpeg",
-      url: "https://engahmadmobayed.com/",
+      image: "https://eng.ahmadmobayed.com/about/personal.jpeg",
+      url: "https://eng.ahmadmobayed.com/",
     },
     icons: {
       icon: "/favicon.ico",
@@ -108,7 +108,7 @@ export const metaTranslations = {
       card: "summary_large_image",
       title: "دريم ستوديو | تصاميم منازل فاخرة بإدارة المهندس أحمد المبيض",
       description: "تحويل الرؤى إلى مساحات معيشة فاخرة وأنيقة.",
-      images: ["/about/personal.jpeg"],
+      images: ["https://eng.ahmadmobayed.com/about/personal.jpeg"],
     },
   },
 };
